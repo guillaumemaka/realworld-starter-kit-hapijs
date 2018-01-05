@@ -148,14 +148,14 @@ describe('articles endpoint', () => {
 
     describe('/feed', () => {
       before((done) => {
-        return Promise.all([
+        Promise.all([
           jake.follow(stan._id),
           jake.follow(emilly._id),
           jake.follow(mike._id)
         ])
         .then((results) => {
           jake = results.pop()
-          return done
+          done()
         })
         .catch(done)
       })
@@ -724,7 +724,7 @@ describe('articles endpoint', () => {
     let article
 
     before((done) => {
-      return Promise.all([
+      Promise.all([
         factory.create('article'),
         factory.createMany('comment', 5)
       ]).then(results => {
@@ -734,7 +734,7 @@ describe('articles endpoint', () => {
             c.article = article._id
             return c.save()
           })).then(() => {
-            return done
+            done()
           })
       })// .catch(done)
     })
@@ -820,7 +820,7 @@ describe('articles endpoint', () => {
       Promise.resolve(factory.createMany('article_with_comments', 2))
       .then(savedArticles => {
         articlesWithComent = savedArticles
-        return done()
+        done()
       }).catch(done)
     })
 
