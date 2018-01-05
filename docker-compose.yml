@@ -18,7 +18,7 @@ services:
       - 8080:8080
     restart: on-failure
   mongo:
-    image: mongo:latest
+    image: mongo:3.4.10
     expose:
       - 27017
     restart: on-failure
