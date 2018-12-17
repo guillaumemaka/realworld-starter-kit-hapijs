@@ -83,7 +83,7 @@ describe('Services', () => {
     })
 
     it('create', (done) => {
-      factory.attrs('user', {password: 'password'}).then(attrs => {
+      factory.attrs('user', { password: 'password' }).then(attrs => {
         server.methods.services.users.create({ user: attrs }, (err, user) => {
           expect(err).to.be.null()
           expect(user._id).to.not.be.undefined().and.not.empty()
@@ -103,7 +103,7 @@ describe('Services', () => {
         password: 'p4ss2@rd'
       }
 
-      server.methods.services.users.update(user1, {user: payload}, (err, user) => {
+      server.methods.services.users.update(user1, { user: payload }, (err, user) => {
         expect(err).to.be.null()
         expect(user.username).to.equal(payload.username)
         expect(user.email).to.equal(payload.email)

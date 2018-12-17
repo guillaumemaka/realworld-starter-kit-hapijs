@@ -62,7 +62,7 @@ describe('profiles endpoint', () => {
     })
 
     it('should return the profile for the given username and following flagged to true (with Auth)', (done) => {
-      factory.attrs('emilly_profile', {following: true}).then(attrs => {
+      factory.attrs('emilly_profile', { following: true }).then(attrs => {
         server.inject({
           method: 'GET',
           url: `/api/profiles/${emillyProfile.username}`,
