@@ -158,7 +158,7 @@ describe('users endpoint', () => {
 
   describe('register', () => {
     it('should register a user with valid information', (done) => {
-      factory.build('user', {username: 'stansmith', email: 'stansmith@example.com'}).then((u) => {
+      factory.build('user', { username: 'stansmith', email: 'stansmith@example.com' }).then((u) => {
         server.inject({
           method: 'POST',
           url: '/api/users',

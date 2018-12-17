@@ -1,14 +1,13 @@
-# ![Node/Hapi.JS/Mongoose Example App](.github/project-logo.png)
+# ![Node/Hapi.JS V17/Mongoose Example App](.github/project-logo.png)
 
 [![Build Status](https://img.shields.io/travis/guillaumemaka/realworld-starter-kit-hapijs.svg?branch=master&style=flat-square)](https://travis-ci.org/guillaumemaka/realworld-starter-kit-hapijs)
 [![Code Climate](https://img.shields.io/codeclimate/github/guillaumemaka/realworld-starter-kit-hapijs.svg?style=flat-square)](https://codeclimate.com/github/guillaumemaka/realworld-starter-kit-hapijs)
 [![Code Climate Coverage](https://img.shields.io/codeclimate/coverage/github/guillaumemaka/realworld-starter-kit-hapijs.svg?style=flat-square)](https://codeclimate.com/github/guillaumemaka/realworld-starter-kit-hapijs/coverage)
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
 [![Code Style](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](https://standardjs.com/)
-[![Hapi.JS](https://img.shields.io/badge/hapi-v16.6.2-blue.svg?style=flat-square)](https://hapijs.com)
-[![Mongoose](https://img.shields.io/badge/mongoose-v4.11.1-blue.svg?style=flat-square)](http://mongoosejs.com/)
+[![Hapi.JS](https://img.shields.io/npm/v/hapi.svg?label=hapi&style=flat-square)](https://hapijs.com)
+[![Mongoose](https://img.shields.io/npm/v/mongoose.svg?label=mongoose&style=flat-square)](http://mongoosejs.com/)
 
+> ### HapiV17 Port of [RealWorldStarterKitHapiJs](https://github.com/guillaumemaka/realworld-starter-kit-hapijs)
 > ### Example Hapi.JS (Hapi.JS + Mongoose) codebase containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld-example-apps) API spec.
 
 # Getting started
@@ -92,5 +91,7 @@ git remote add origin {YOUR_URL}
 - When your ready for review assign one of us
 
 # Credits
+
+[realworld-starter-kit-hapijs](https://github.com/guillaumemaka/realworld-starter-kit-hapijs)
 
 The mongoose models come from the [node-express-realworld-example-app](https://github.com/gothinkster/node-express-realworld-example-app) codebase.

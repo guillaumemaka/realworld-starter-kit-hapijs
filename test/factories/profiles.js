@@ -27,7 +27,11 @@ module.exports = (factory) => {
 
     return attrs
   }
-
+  var buildOption = {
+    afterCreate: (model, attrs, opts) => {
+      model.remove((err, model) => { if (err) { throw err } else { return model } })
+    }
+  }
   factory.define('jake_profile', User, {
     username: 'jake',
     email: 'jake@statefarm.com',
@@ -61,13 +65,5 @@ module.exports = (factory) => {
     email: 'ghost@statefarm.com',
     bio: 'I worked at statefarm',
     image: 'https://static.productionready.io/images/smiley-cyrus.jpg'
-  },
-    {
-      afterCreate: (model, attrs, opts) => {
-        model.remove((err, model) => {
-          if (err) throw err
-        })
-        return model
-      }
-    })
+  }, buildOption)
 }
